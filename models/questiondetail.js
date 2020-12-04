@@ -15,6 +15,10 @@ module.exports = (sequelize, DataTypes) => {
           key: "id",
         },
       },
+      checkcode: {
+        type: DataTypes.STRING(10),
+        allowNull: true,
+      },
     },
     {
       timeStamp: true,

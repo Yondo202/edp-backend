@@ -21,6 +21,7 @@ const occupationRoutes = require("./routes/occupations");
 const locationRoutes = require("./routes/locations");
 const questionRoutes = require("./routes/questions");
 const questionDetailRoutes = require("./routes/questiondsetails");
+const questionresultRoutes = require("./routes/questionresults");
 
 const app = express();
 
@@ -45,6 +46,7 @@ app.use("/api/occupations", occupationRoutes);
 app.use("/api/locations", locationRoutes);
 app.use("/api/questions", questionRoutes);
 app.use("/api/question-details", questionDetailRoutes);
+app.use("/api/question-check", questionresultRoutes);
 
 app.use(errorHandler);
 
